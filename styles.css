@@ -1,0 +1,56 @@
+body {
+    background-color: #f4f8f4; /* blanco suave */
+    font-family: 'Poppins', sans-serif;
+}
+.bg-verde {
+    background-color: #6fdc8c;
+}
+.bg-crema {
+    background-color: rgba(236, 227, 209, 0.806);
+}
+.bg-gris {
+    background-color: rgb(233, 229, 229);
+}
+.verde-text {
+    color: #39b86b;
+}
+.section-padding {
+    padding: 80px 0;
+}
+.card-custom {
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+.card-custom:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.hero-img {
+    max-width: 50vw;
+    border-radius: 20px;
+}
+
+.fade-normal,
+.fade-right,
+.fade-left {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+/* Direcciones */
+.fade-right {
+    transform: translateX(100px);
+}
+
+.fade-left {
+    transform: translateX(-100px);
+}
+
+/* Clase que activa animación */
+.show {
+    opacity: 1 !important;
+    transform: translateX(0) translateY(0) !important;
+}
