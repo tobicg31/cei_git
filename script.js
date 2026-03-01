@@ -28,3 +28,32 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
+
+const timelineData = [
+    { year: "2025-2026", text: "Ele" },
+    { year: "2024-2025", text: "Mateo" },
+    { year: "2023-2024", text: "Venie" },
+    { year: "2022-2023", text: "Venie" },
+    { year: "2021-2022", text: "Jose" },
+];
+
+const container = document.getElementById("timeline-vertical");
+
+timelineData.forEach((item, index) => {
+
+    const side = index % 2 === 0 ? "left" : "right";
+
+    const element = document.createElement("div");
+    element.className = `timeline-item ${side}`;
+
+    element.innerHTML = `
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <h4>${item.year}</h4>
+            <p>${item.text}</p>
+        </div>
+    `;
+
+    container.appendChild(element);
+});
