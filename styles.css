@@ -87,17 +87,6 @@ body {
     left: 50%;
 }
 
-.timeline-dot {
-    position: absolute;
-    top: 50px;
-    width: 22px;
-    height: 22px;
-    background: white;
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
 
 .timeline-content {
     background: #f4f8f4;

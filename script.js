@@ -34,7 +34,7 @@ const timelineData = [
     { year: "2025-2026", text: "Ele" },
     { year: "2024-2025", text: "Mateo" },
     { year: "2023-2024", text: "Venie" },
-    { year: "2022-2023", text: "Venie" },
+    { year: "2022-2023", text: "Jose" },
     { year: "2021-2022", text: "Jose" },
 ];
 
@@ -48,7 +48,6 @@ timelineData.forEach((item, index) => {
     element.className = `timeline-item ${side}`;
 
     element.innerHTML = `
-        <div class="timeline-dot"></div>
         <div class="timeline-content">
             <h4>${item.year}</h4>
             <p>${item.text}</p>
